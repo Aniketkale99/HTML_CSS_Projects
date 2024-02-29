@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    width: 100%;
+    /* visible to eye range is vh -viewport height */
+    height: 100vh;
+    background-color: black;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.1)
+      ),url(/Youtube_video_CSS/Project_3_Animation/mario-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+}
+
+h1{
+
+    font-size: 80px;
+    text-align: center;
+    padding-top: 30px;
+
+  
+}
+
+
+img{
+    width: 150px;
+    /* positioning the mario charechter on the ground in the image */
+    position: absolute;
+    /* hit and trial for its position */
+    bottom: 9%;
+    /* shortcut to write animation */
+    animation: mariorun 2.5s linear infinite;
+}
+
+/* providing the suitable animation criterians */
+@keyframes mariorun {
+    0%{
+        translate: 0%;
+    }
+
+    100%{
+       translate: calc(100vw - 200px);
+
+    }
+    
+}
