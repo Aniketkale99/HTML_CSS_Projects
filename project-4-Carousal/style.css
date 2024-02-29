@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+h1{
+    color:white;
+    font-size:35px;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    background-color: black;
+}
+
+.img-container{
+    width: 60vw;
+    height: 50rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 15px 15px navy;
+    background-image: url('https://static.toiimg.com/thumb/msid-77659752,width-1280,height-720,resizemode-4/77659752.jpg');
+    background-size: cover;
+    animation: gallery 100s linear infinite;
+}
+
+@keyframes gallery{
+    0%{
+        background-image: url('https://media.crictracker.com/media/featureimage/2022/01/Lucknow-Super-Giants-logo.jpg');
+    }
+
+    11.11%{
+        background-image: url('https://media.crictracker.com/media/featureimage/Gujarat-Titans-logo.jpg');
+    }
+
+    22.22%{
+        background-image: url('https://media.crictracker.com/media/attachments/1680698558309_Mumbai-Indians-new-logo.jpeg');
+    }
+
+    33.33%{
+        background-image: url('https://media.crictracker.com/media/attachments/1674647344276_Rajasthan-Royals-Logo.jpeg');
+    }
+ 
+    44.44%{
+        background-image: url('https://media.crictracker.com/media/attachments/1671443590572_Punjab-Kings.jpeg'); 
+    } 
+
+    555.55%{
+        background-image: url('https://media.crictracker.com/media/featureimage/Delhi-Capitals-logo-1.jpg');
+    }
+
+    66.66%{
+        background-image: url('https://media.crictracker.com/media/attachments/1669546081953_Sunrisers-Hyderabad.jpeg')
+    }
+
+    77.77%{
+        background-image: url('https://media.crictracker.com/media/attachments/1674557817477_Royal-Challengers-Bangalore.jpeg');
+    }
+    88.88%{
+        background-image: url('https://media.crictracker.com/media/attachments/1674543242945_CSK-Logo.jpeg');
+    }
+    99.99%{
+        background-image: url('https://media.crictracker.com/media/attachments/1671612736819_KKR-logo.jpeg');
+    }
+}
