@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.main_box{
+    background-image: url(/Youtube_video_CSS/Mini-project-1-photgraphy-website/photo.jpg);
+    /* The screen you see is available using viewport height */
+    height: 100vh;
+    background-size: cover;
+
+}
+
+.btn_one{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    /* will set the position with respect to the page as parent main_box is not set to relative it will consider the browser as parent at position=absolute */
+    position: absolute;
+    left: 16px;
+    line-height: 60px;
+    cursor: pointer;
+}
+
+.sidebar_menu{
+    position: fixed;
+    /* moving the menu out of the screen so when the 3 bars are clicked it pops in from left position */
+    left:-350px;
+    /* This is done to give the menu bar a proper bar type shape when it pops up on the screen having the complete height of scree and  some random width which we set */
+    height: 100vh;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.1 );
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+    transition: all 0.3s linear;
+}
+.sidebar_menu .logo{
+
+    position: absolute;
+    width: 100%;
+    line-height: 60px;
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+    height: 60px;
+}
+
+.sidebar_menu .logo a{
+
+    position: absolute;
+    left: 50px;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 500;
+
+}
+
+.sidebar_menu .btn_two{
+    color: grey;
+    font-size: 30px;
+    line-height: 60px;
+    position: absolute;
+    left: 250px;
+    cursor: progress;
+    /* opacity: 0; */
+}
+
+.sidebar_menu .menu{
+
+    color: white;
+    position: absolute;
+    width: 100%;
+    top: 80px;
+}
+
+.sidebar_menu .menu li{
+
+    margin-top: 10px;
+    /* Top-bottom/left-right */
+    padding: 10px 20px;
+
+}
+
+.sidebar_menu .menu i,a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px
+
+}
+
+.sidebar_menu .menu i{
+    padding-right: 8px;
+}
+
+.sidebar_menu .social_media{
+ 
+    /* when the position is absolute it is taking the reference from the parent which is the sidebar */
+    position: absolute;
+    left: 25%;
+    bottom:50px;
+}
+
+.sidebar_menu .social_media i{
+    color:white;
+    /* giving grey shade */
+    opacity: 0.5;
+    padding: 0 5px;
+
+}
+
+/* to remove the checkbox display but to keep it on the wensite */
+
+#check{
+    display: none;
+    /* the space for this checkbox is now filled with the other contents of the website */
+}
+
+
+/* giving properties to the website to make it responsive */
+.sidebar_menu .menu li:hover{
+
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+}
+
+.btn_one  i :hover{
+
+    font-size: 40px;
+}
+
+.btn_two  i :hover{
+    font-size: 30px
+}
+
+.sidebar_menu .social_media i:hover{
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+#check:checked ~ .sidebar_menu{
+    left: 0;
+}
+
+#check:checked ~ .btn_one i{
+    opacity: 0;
+}
+
+#check:checked ~ .sidebar_menu .btn_two i{
+
+    opacity: 1;
+}
