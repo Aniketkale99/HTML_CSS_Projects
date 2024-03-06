@@ -12,9 +12,9 @@ body{
 /*  to perfectly align the div at the center */
     height:100vh;  
 /* This sets the height of the body to be equal to the viewport height, ensuring that the entire content is centered vertically. */
-    display:flex;
-    align-items:center;
-    justify-content:center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .container{
