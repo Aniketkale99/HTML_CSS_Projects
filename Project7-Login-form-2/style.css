@@ -8,12 +8,20 @@
 body{
     background-color: rgba(235, 185, 211, 0.8);
     overflow: hidden;
+
+/*  to perfectly align the div at the center */
+    height:100vh;  
+/* This sets the height of the body to be equal to the viewport height, ensuring that the entire content is centered vertically. */
+    display:flex;
+    align-items:center;
+    justify-content:center;
 }
 
 .container{
     max-width: 375px;
     padding: 0 20px;
     margin: 150px auto;
+    /* This is to randomly give the margin from top and check where the div gets positioned - iterative method  */
 }
 
 .wrapper{
