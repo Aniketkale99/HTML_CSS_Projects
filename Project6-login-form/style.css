@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+}
+
+body{
+    background-color:rgba(0,0,0,0.7) ;
+    overflow: hidden;
+}
+.container{
+max-width: 440px;
+padding: 0 20px;
+margin: 170px auto;
+}
+
+.wrapper{
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.wrapper .title{
+    line-height: 90px;
+    background-color: navy;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    border-radius: 5px 5px 0 0;
+}
+
+.wrapper form{
+    padding: 30px 25px 25px 25px;
+}
+
+.wrapper form .row{
+    height: 45px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.wrapper form .row input{
+    height: 100%;
+    width: 100%;
+    padding-left: 50px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px lightgray solid;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.wrapper form .row input:focus{
+
+    border-color: navy;
+    box-shadow: inset 0px 0px 2px 2px rgb(76, 76, 255,0.25);
+
+}
+
+.wrapper form .row i{
+    position: absolute;
+    width: 40px;
+    height: 100%;
+    color:white;
+    font-size: 20px;
+    background-color: navy;
+    border: 1px solid navy;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px 0 0 5px;
+}
+
+.wrapper form .pass{
+    margin: -8px 0 10px 0;
+}
+
+.wrapper form .pass a{
+    text-decoration: none;
+    color: navy;
+    font-size: 17pxs;
+}
+
+.wrapper form .pass a:hover{
+    text-decoration: underline;
+}
+
+.wrapper form .signup-link{
+text-align: center;
+margin-top: 20px;
+
+}
+
+.wrapper form .signup-link a{
+    text-decoration: none;
+    color: navy;
+    font-size: 17pxs;
+}
+
+.wrapper form .signup-link a:hover{
+    text-decoration: underline;
+}
+
+
+.wrapper form .button input{
+    padding-left: 0;
+    background-color: navy;
+    border: 1px solid navy;
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.wrapper form .button input:hover{
+
+    box-shadow:  0px 0px 5px 5px rgb(76, 76, 255,0.5);
+}
+
+
+.wrapper form .button a:hover{
+    text-decoration: underline;
+}
