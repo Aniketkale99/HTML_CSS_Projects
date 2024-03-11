@@ -86,6 +86,7 @@ border: 3px solid white;
     margin-top: 15px;
 }
 
+
 /* made the div.link a flexbox and then aligned the icns in center */
 
 .media-button .link{
@@ -100,7 +101,12 @@ border: 3px solid white;
     margin: 0 10px;
     background-color: #4070f4;
     text-decoration: none;
+    transition: all ease 0.3s;
 }
+.media-button .link :hover{
+transform: scale(1.2);
+}
+
 
 .card .buttons{
 
