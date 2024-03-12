@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;  
+}
+
+body{
+    background-color: rgb(127, 255, 212,0.4);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    max-width:1000px;
+    width:100%;
+    background-color: white;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 5px 15px rgba(0,0,0,0.1);
+}
+
+.left{
+    width: 30%;
+    /* background-color: blue;*/
+    margin-right: 50px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left .address{
+    margin-bottom: 1.87rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.left  i{
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    color: rgb(22, 22, 172);
+}
+
+.left .head{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.text1 , .text2{
+opacity: 0.7;
+
+}
+
+.left .phone{
+    margin-bottom: 1.87rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.left .email{
+    margin-bottom: 1.87rems;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.center{
+    /* background-color: yellow; */
+    border: 1px solid rgb(22, 22, 172);
+    margin-left: 10px;
+    margin-right: 50px;
+    height: 50vh;
+}
+
+.right{
+    width: 70%;
+    /* background-color: yellow; */
+    padding: 0px, 30px,0px,30px;
+}
+
+.right .title{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgb(22, 22, 172);
+}
+
+.right .name{
+    width: 100%;
+    padding: 0.31rem;
+    margin-top: 0.62rem;
+    border: none;
+    background-color: rgb(255, 218, 255, 0.4);
+}
+
+
+.right .textarea{
+    width: 100%;
+    padding: 0.31rem;
+    margin-top: 0.62rem;
+    border: none;
+    background-color: rgb(255, 218, 255, 0.4);
+}
+
+.right .btn{
+    margin-top: 0.62rem;
+    background-color:  rgb(22, 22, 172);
+
+}
