@@ -7,16 +7,20 @@
 
 body{
     background-color: #333A73;
-    height: 100vh;
+    /* The body default has a height of 100vh so next time whenever this situation arises we have to use % as that is best for big elements  */
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 .container{
     display: flex;
     flex-direction: row;
     place-items: center;
     justify-content:space-around;
+    flex-wrap:wrap;
+    gap: 20px;
 }
 
 .card{
