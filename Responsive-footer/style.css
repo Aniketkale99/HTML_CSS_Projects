@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif; 
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: antiquewhite;
+    color: antiquewhite;
+    overflow: auto;
+
+}
+
+.container{
+    position: fixed;
+    bottom: 0;
+    width:100%;
+    background-color: navy;
+    overflow: auto;
+}
+
+.container .top{
+    padding: 2rem 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap ;
+    row-gap: 1rem;
+ 
+}
+
+
+
+
+.container .top .right{
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+
+.container .top .right i{
+font-size: 1.5rem;
+}
+
+.brand-name{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+ .top .left{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top .left .link{
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: white;
+    margin: 0 10px;
+    background-color: #4070f4;
+    text-decoration: none;
+    transition: all ease 0.3s;
+}
+
+.line{
+border-top: 1px solid antiquewhite ;
+width: 100%;
+}
+
+.container .middle {
+    padding: 2rem 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+   
+}
+
+.middle .section .title{
+margin-bottom: 1rem;  
+text-decoration: underline;
+/* text-decoration: solid antiquewhite 1px;   */
+}
+
+.middle .section .list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.8rem;    
+}
+.middle .section .button-1{
+    width: 100%;
+}
+
+.container .end{
+    background-color: rgb(3, 3, 71);
+    padding: 0.1rem 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap ;
+    row-gap: 1rem;
+}
+
+.end .end-right{
+    display: flex;
+    column-gap: 0.5rem;
+    opacity: 0.8;
+    flex-wrap: wrap ;
+    row-gap: 1rem;
+}
+
+.end .end-left{
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 0.5rem;
+    opacity: 0.8;
+    flex-wrap: wrap ;
+    row-gap: 1rem;
+}
