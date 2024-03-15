@@ -1,0 +1,105 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+}
+
+body{
+    background-color: plum;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    max-width: 700px;
+    width: 100%;
+    height: 400px;
+    background-color: white;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+
+}
+
+.container .right{
+width: 50%;
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 1.5em;
+z-index: 12;
+background-color: white;
+
+}
+
+.right .title{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+.right .rating{
+    color: darkorchid;
+    margin-bottom:1rem ;
+}
+
+.right .text{
+    text-align: justify;
+    margin-bottom: 0.5rem;
+}
+
+.right .btn{
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: darkorchid;
+    color: white;
+    border: none;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    transition: all linear 0.3s;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+}
+
+
+
+.container .left {
+    width:50%;
+    height: 100%;
+    background-image: url('./pictures/iphone-15-Photoroom.png-Photoroom.png');
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container .left ul{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.7);
+    border-radius: 0px 20px 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    padding: 10px 26px;
+    margin-left: -350px;
+    transition: 0.4s all ease;
+}
+
+ul li{
+    font-size: 20px;
+    color: white;
+}
+
+.left:hover ul{
+margin-left: 0px;
+}
