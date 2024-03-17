@@ -1,0 +1,409 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins' sans-serif;
+}
+
+body{
+    background-image: linear-gradient(to right bottom,
+    rgba(5, 25, 55, 0.6),
+    rgba(0, 77, 122, 0.6),
+    rgba(0, 135, 147, 0.6),
+    rgba(0, 191, 114, 0.6),
+    rgba(168, 235, 18, 0.6)), url(https://upload.wikimedia.org/wikipedia/en/thumb/8/84/Indian_Premier_League_Official_Logo.svg/1200px-Indian_Premier_League_Official_Logo.svg.png)
+    ;
+  background-repeat: no-repeat;
+  background-size:cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+h1{
+    font-size: 4rem;
+    color: rgb(33, 22, 22);
+    filter: drop-shadow(0px 0px 10px  white);
+    font-weight: 600;
+}
+
+.container{
+    padding: 10px; 
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    justify-content:space-around;
+    gap: 2rem;
+    flex-wrap:wrap;
+}
+
+.container :hover > .card{
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+
+.card{
+    height: 450px;
+    width: 300px;
+    /* to place front and back behind each other */
+    position: relative;
+
+    /* adding animation */
+    transition: 1500ms;
+    transform-style: preserve-3d;
+}
+.card:hover{
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+
+.front , .back{
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50,50,50,0.25);
+    /* to set the fron and back side of the card one behind the other */
+    position: absolute;
+      /* done because when front is shown back is hhidden */
+    backface-visibility: hidden;
+}
+
+#csk-front{
+  background-image: url('./assets/csk.jpg');
+  background-position: center;
+  object-fit: cover;
+  background-repeat:no-repeat ;
+}
+
+#csk-back{
+    background-color: rgb(183, 183, 23);
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* padding: 10px; */
+
+}
+.back .body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.body .name{
+    margin-bottom:16px ;
+}
+
+#csk-back .image {
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    border-radius: 50%;
+    padding: 3px;
+
+}
+
+#csk-back .image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid black;
+    object-fit: cover;
+
+}
+
+/* ...........................................................*/
+
+
+#mi-front{
+    background-image: url('https://w0.peakpx.com/wallpaper/818/862/HD-wallpaper-mumbaiindiansblue-ambani-blue-cricket-csk-hardik-pandey-indian-premier-league-ipl-mi-mumbai-indians-rohit-sharma-thumbnail.jpg');
+    background-position: center;
+    object-fit: cover;
+    background-repeat:no-repeat ;
+}
+  
+#mi-back{
+      background-color: rgba(6, 6, 185, 0.5);
+      transform: rotateY(180deg);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+}
+
+#mi-back .image {
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    border-radius: 50%;
+    padding: 3px;
+
+}
+
+#mi-back .image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid black;
+    object-fit: cover;
+
+}
+
+
+/* ...........................................................*/
+
+#rcb-front{
+    background-image: url('https://e0.pxfuel.com/wallpapers/472/703/desktop-wallpaper-rcb-2021-rcb-logo-thumbnail.jpg');
+    background-position: center;
+    object-fit: cover;
+    background-repeat:no-repeat ;
+}
+  
+#rcb-back{
+      background-color: rgba(173, 19, 19,0.8);
+      transform: rotateY(180deg);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+}
+
+#rcb-back .image {
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    border-radius: 50%;
+    padding: 3px;
+
+}
+
+#rcb-back .image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid black;
+    object-fit: cover;
+
+}
+/* ...........................................................*/
+
+#kkr-front{
+    background-image: url('https://e0.pxfuel.com/wallpapers/957/502/desktop-wallpaper-kkr-logo-symbols-2022-kolkata-knight-riders-rcb-logo.jpg');
+    background-position: center;
+    object-fit: cover;
+    background-repeat:no-repeat ;
+}
+
+#kkr-back{
+      background-color: rgba(128, 0, 128, 0.8);
+      transform: rotateY(180deg);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+}
+
+#kkr-back .image {
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    border-radius: 50%;
+    padding: 3px;
+
+}
+
+#kkr-back .image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid black;
+    object-fit: cover;
+
+}
+
+/* ...........................................................*/
+
+#punjab-front{
+    background-image: url('./assets/punjab-logo.jpeg');
+    background-position: center;
+    object-fit: cover;
+    background-repeat:no-repeat ;
+}
+
+#punjab-back{
+      background-color: rgb(229, 41, 41,0.8);
+      transform: rotateY(180deg);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+}
+
+#punjab-back .image {
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    border-radius: 50%;
+    padding: 3px;
+
+}
+
+#punjab-back .image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid black;
+    object-fit: cover;
+
+}
+
+/* ...........................................................*/
+
+#gt-front{
+    background-image: url('./assets/gt-logo.jpeg');
+    background-position: center;
+    object-fit: cover;
+    background-repeat:no-repeat ;
+}
+
+#gt-back{
+      background-color: rgb(2, 2, 51,0.8);
+      transform: rotateY(180deg);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+}
+
+#gt-back .image {
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    border-radius: 50%;
+    padding: 3px;
+
+}
+
+#gt-back .image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid black;
+    object-fit: cover;
+
+}
+
+
+/* ...........................................................*/
+
+#dc-front{
+    background-image: url('./assets/dc-logo.jpeg');
+    background-position: center;
+    object-fit: cover;
+    background-repeat:no-repeat ;
+}
+
+#dc-back{
+      background-color: rgba(43, 43, 231, 0.8);
+      transform: rotateY(180deg);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+}
+
+#dc-back .image {
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    border-radius: 50%;
+    padding: 3px;
+
+}
+
+#dc-back .image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid black;
+    object-fit: cover;
+
+}
+
+/* ................................................... */
+
+#rr-front{
+    background-image: url('./assets/rr-logo.jpg');
+    background-position: center;
+    object-fit: cover;
+    background-repeat:no-repeat ;
+}
+
+#rr-back{
+      background-color: rgba(242, 106, 151,0.8);
+      transform: rotateY(180deg);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+}
+
+#rr-back .image {
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    border-radius: 50%;
+    padding: 3px;
+
+}
+
+#rr-back .image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid black;
+    object-fit: cover;
+
+}
+
+/* ................................................... */
+
+#srh-front{
+    background-image: url('./assets/srh-logo.jpg');
+    background-position: center;
+    object-fit: cover;
+    background-repeat:no-repeat ;
+}
+
+#srh-back{
+      background-color:rgb(215, 97, 54);
+      transform: rotateY(180deg);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+}
+
+#srh-back .image {
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    border-radius: 50%;
+    padding: 3px;
+
+}
+
+#srh-back .image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid black;
+    object-fit: cover;
+
+}
