@@ -30,7 +30,7 @@ h1{
     margin-bottom:2rem;
 }
 /* Making the title of the page responsive  */
-@media(max-width:500px){
+@media(max-width:680px){
     h1{
         font-size: 2.5rem;
         margin-bottom: 1.5rem;
