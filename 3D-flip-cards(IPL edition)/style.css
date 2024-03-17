@@ -27,6 +27,14 @@ h1{
     color: rgb(33, 22, 22);
     filter: drop-shadow(0px 0px 10px  white);
     font-weight: 600;
+    margin-bottom:2rem;
+}
+/* Making the title of the page responsive  */
+@media(max-width:500px){
+    h1{
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+    }
 }
 
 .container{
@@ -78,7 +86,7 @@ h1{
 }
 
 #csk-back{
-    background-color: rgb(183, 183, 23);
+    background-color: rgb(183, 183, 23 ,0.8);
     transform: rotateY(180deg);
     display: flex;
     flex-direction: column;
@@ -382,7 +390,7 @@ h1{
 }
 
 #srh-back{
-      background-color:rgb(215, 97, 54);
+      background-color:rgb(215, 97, 54,0.8);
       transform: rotateY(180deg);
       display: flex;
       flex-direction: column;
