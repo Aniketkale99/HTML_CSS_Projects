@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit';
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    /* background-color: yellowgreen; */
+
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #F27121, #E94057, #8A2387); 
+}
+
+.container .right{
+    width: 50%;
+    min-height: 100vh;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.right .title{
+    font-size: 30px;
+    border-bottom: 5px solid black;
+}
+
+.container .right .form{
+    display: flex;
+    flex-direction:column;
+    justify-content:start;
+    align-items: start;
+    margin-top: 20px;
+}
+
+.container .right .form .input-text{
+    width:400px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 15px ;
+    font-size: 15px;
+    border-radius:30px ;
+    border: none;
+}
+
+.container .right .form .input-text:focus{
+    border: 2px solid red;
+}
+/* #ff994f */
+
+.container .right .form .btn{
+    padding: 10px 30px;
+    font-size: 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition:  background linear 0.3s;
+    border: none;
+}
+
+.container .right .form .btn:hover{
+    background: linear-gradient(90deg, hsla(333, 100%, 53%, 1) 0%, hsla(33, 94%, 57%, 1) 100%);
+    transform: scale(1.2);
+    box-shadow: 0px 0px 5px 5px white;;
+}
+
+
+.container .left{
+    width: 50%;
+    min-height: 100vh;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* making website responsive */
+
+@media (max-width:800px){
+    .container .right{
+        /* padding: 0px 150px; */
+    }
+    .input-text{
+        width: 80vw;
+    }
+
+    .container .left{
+        display: none;
+    }
+}
