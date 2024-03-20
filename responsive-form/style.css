@@ -58,9 +58,9 @@ body{
 }
 
 .container .right .form .input-text:focus{
-    border: 2px solid red;
+    border: 5px solid red !important; 
+    box-shadow: 0px 0px 10px 5px red !important;
 }
-/* #ff994f */
 
 .container .right .form .btn{
     padding: 10px 30px;
