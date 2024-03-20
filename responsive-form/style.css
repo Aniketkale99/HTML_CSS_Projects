@@ -89,6 +89,23 @@ body{
 
 /* making website responsive */
 
+@media(max-width:1000px){
+    .container .left {
+        width: 30%;
+    }
+
+    .container .left img  {
+        width: 80%;
+        height: 80%;
+    }
+    .container .left {
+        width: 70%;
+    }
+}
+
+
+
+
 @media (max-width:800px){
     .container .right{
         /* padding: 0px 150px; */
@@ -100,4 +117,3 @@ body{
     .container .left{
         display: none;
     }
-}
